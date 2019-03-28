@@ -1,4 +1,4 @@
 async-timeout==3.0.1
-discord.py==1.0.0a1790+g43b4475
+discord.py==0.1.0
 python-env==1.0.0
 PyYAML==3.13
