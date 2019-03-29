@@ -48,23 +48,29 @@ async def info(ctx):
     embed = discord.Embed(title="Bot", description="Alexa", color=0xeee657)
 
     embed.add_field(name="Author", value="defolt_17#3701")
-
     embed.add_field(name="Server count", value=f"{len(bot.guilds)}")
-
     embed.add_field(name="Group", value="№22")
-
     embed.add_field(name="GitHub", value="https://github.com/defolt17/Py-Discord-Bot-Alexa")
 
     await ctx.send(embed=embed)
 
 
+@bot.command()
+async def commands(ctx):
+    await ctx.send(str('$:\n' +
+                          'add(a, b)\n' +
+                          'multiply(a, b)\n' +
+                          'greet()\n' +
+                          'rjomba()\n' +
+                          'think()\n' +
+                          'info()\n'))
 ###############################
-
-
-@client.event
+'''
+@bot.event()
 async def on_member_join(member):
-    await client.send_message(member, 'Welcome to the club buddy.')
-
+    print(member.name)
+    await client.send_message(message.channel, 'Harro')
+'''
 
 
 ################################
